@@ -1,0 +1,87 @@
+* {
+    overflow-x: hidden;
+}
+body{
+    background-color: lightblue;
+}
+
+.container{
+    border-radius: 20px;
+    box-shadow: .5px 10px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 5%;
+    padding: 2%;
+}
+
+.container h1{
+    min-height: 80px;
+}
+
+.container h4{
+    min-height: 60px;
+}
+
+.destacar{
+    background-color: rgb(156, 203, 244);
+}
+
+a , a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+
+.sair, .sair:hover{
+    color: black;
+}
+
+/*.btn-cadastrar{
+    background-color: lightblue;
+    border-radius: 10px;
+    border: none;
+    padding: 5px 15px;
+    margin-top: 40px;
+    color: black;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.btn-editar{
+    background-color: lightblue;
+    border-radius: 10px;
+    border: none;
+    padding: 3px 10px;
+    color: black;
+    font-weight: 300;
+}
+
+.btn-excluir{
+    background-color: #ff0000;
+    border-radius: 10px;
+    border: none;
+    padding: 3px 10px;
+}*/
+
+
+td{
+    cursor: pointer;
+}
+
+.form-cadastro-treino{
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.input{
+    padding: 10px 25px;
+    background-color: #d3d3d3;
+    border: none;
+    border-radius: 5px;
+    margin: 20px;
+    min-width: 300px;
+    
+}
+
+.input::placeholder{
+    color: gray;
+}

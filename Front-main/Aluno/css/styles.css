@@ -1,0 +1,37 @@
+/*NAVBAR */
+.navbar {
+    margin-left: -5.5%;
+    margin-right: -5.5%;
+}
+
+
+
+
+
+.formulario {
+        background-color: #FFF;
+        border-radius: 20px;
+        box-shadow: .5px 10px 15px rgba(0, 0, 0, 0.2);
+        margin: 25px auto;
+        padding: 25px;  
+}
+.texto {
+    text-align: center;
+}
+
+.form-control {
+    background-color: #E2E1E5;
+}
+
+body {
+    background-color: lightblue;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+div {
+    background-color: white;
+}
+
+

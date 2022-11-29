@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!--CSS pessoal-->
+    <link rel="stylesheet" href="css/meu.css">
+</head>
+
+<body>
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <!--Esse button só aparece quando usar no celular e a navbar se retrai-->   
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+             <!--Links da nav no pc-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="seusAlunos.html">Seus Alunos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="exerciciosCadastrados.html">Exercícios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastrarCardio.html">Cardio</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+
+    <div class="container bg-light " style="text-align: center;">
+        <div class="row ">
+            <!--Conteúdo lateral-->
+            <div class="col-sm-2">
+                <h4>
+                    Olá, NomePersonal
+                </h4>
+                 <!-- FOTO DE PERFIL QUE REDIRECIONA PARA PERFIL-->
+                    <button type="file" style="padding: 50px; border-radius: 50%; border: 0;">
+
+                        <img src="img/user.png" alt="" style="height: 70px; width:70px;">
+                    </button>
+                <p>
+                    1631
+                </p>
+                <p>
+                    Centro
+                </p>
+                <p>
+                    CREF:
+                </p>
+                <p>
+                    Matheus Ruiz Alves
+                </p>
+                <button class="btn"><a href="../Login/login.html">Sair</a></button>
+                <p>Garanhuns - PE</p>
+            </div>
+
+            <!-- Conteúdo central -->
+            <div class="col-sm-10">
+                <h1>
+                    Exercícios Cadastrados
+                </h1>
+                <input class="input form-control me-2" placeholder="Procure personal"/>
+                    
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Exercício
+                                </th>
+                                <th>
+                                    Série
+                                </th>
+                                <th>
+                                    Repetição
+                                </th>
+                                <th>
+                                    Descanso
+                                </th>
+                                <th>
+                                    Meta(cal)
+                                </th>
+                                <th colspan="2">
+                                    
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody><!--Dados só pra ilustrar, pode apagar se quiser-->
+                            <tr>
+                                <td>
+                                    exercicio
+                                </td>
+                                <td>
+                                    3
+                                </td>
+                                <td>
+                                    12
+                                </td>
+                                <td>
+                                    90''
+                                </td>
+                                <td>
+                                    45
+                                </td>
+                                <td>
+                                    <a href="#"><button class="btn btn-primary" href="">Editar</button></a>
+                                    <button class="btn btn-danger"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    exercicio
+                                </td>
+                                <td>
+                                    3
+                                </td>
+                                <td>
+                                    12
+                                </td>
+                                <td>
+                                    90''
+                                </td>
+                                <td>
+                                    45
+                                </td>
+                                <td>
+                                    <a href="#"><button class="btn btn-primary" href="">Editar</button></a>
+                                    <button class="btn btn-danger"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    exercicio
+                                </td>
+                                <td>
+                                    3
+                                </td>
+                                <td>
+                                    12
+                                </td>
+                                <td>
+                                    90''
+                                </td>
+                                <td>
+                                    45
+                                </td>
+                                <td>
+                                    <a href="#"><button class="btn btn-primary" href="">Editar</button></a>
+                                    <button class="btn btn-danger"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <a href="cadastrarExercicio.html">
+                    <button class="btn btn-primary">Cadastrar</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

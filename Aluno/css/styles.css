@@ -1,0 +1,28 @@
+/*NAVBAR */
+.navbar {
+    margin-left: -5.5%;
+    margin-right: -5.5%;
+}
+
+.container {
+        background-color: #FFF;
+        border-radius: 20px;
+        box-shadow: .5px 10px 15px rgba(0, 0, 0, 0.2);
+        margin-top: 5%;
+        padding: 2%;  
+}
+
+.texto {
+    text-align: center;
+}
+
+body {
+    background-color: lightblue;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+
+
+

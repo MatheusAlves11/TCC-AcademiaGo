@@ -69,3 +69,7 @@ thead {
 /*thead>tr{
     position: fixed;
 }*/
+.final{
+    bottom: 0;
+    left: 0;
+}

@@ -15,7 +15,7 @@
         crossorigin="anonymous"></script>
         
     <!--CSS-->
-    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="../public/css/css.css">
     
     <!--ICONs-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
@@ -27,19 +27,21 @@
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item ">
-                    <a class="nav-link" href="">Alunos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">Exercício</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">Cardio</a>
-                </li>
-            </ul>
-        </div>
+        <!--LINK-->
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="ListagemAlunosPersonal.html">Seus Alunos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ListagemExerciciosPersonal.html">Exercícios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ListagemCardiosersonal.html">Cardio</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 </nav>
 
 <body>
@@ -52,9 +54,10 @@
                 </h4>
                 <div>
                     <button type="file" class="fotoPerfil">
-                        <img src="img/user.png" alt="" class="fotoUsuario" style="height: 3.5rem; width:3.5rem;">
+                        <img src="../public/img/user.png" alt="" class="fotoUsuario" style="height: 3.5rem; width:3.5rem;">
                     </button>
                 </div>
+                <p><b>NomePERSONAL</b></p>
                 <p>
                     1631
                 </p>
@@ -64,17 +67,15 @@
                 <p>
                     CREF:
                 </p>
-                <p>
-                    Matheus Ruiz Alves
-                </p>
+               
                 <button class="btn btn-danger">Sair</button>
                 <p>Garanhuns - PE</p>
             </div>
 
             <div class="col-sm-10">
-                <h1>
-                    Alunos cadastrados:
-                </h1>
+                <h2 class="texto mb-4"> 
+                    <b>  Alunos Cadastrados </b>
+               </h2>
                 <input class="input form-control me-2" placeholder="Procure Aluno" />
                 <div class="table-responsive">
                     <table class="table">
@@ -84,7 +85,7 @@
                                     Nome
                                 </th>
                                 <th>
-                                    Telefone
+                                    Unidade
                                 </th>
                                 <th>
                                     Informações
@@ -97,9 +98,9 @@
                                 <td>
                                     Paulo Muzy
                                 </td>
-                                <td>
-                                    4002-8922
-                                </td>
+                               <td>
+                                Centro
+                               </td>
 
                                 <td>
                                     <button class="btn btn-primary">Perfil</button>
@@ -111,7 +112,8 @@
                                     Cariani
                                 </td>
                                 <td>
-                                    01987654321
+                                    Cohab 2
+                                </td>
 
                                 <td>
                                     <button class="btn btn-primary">Perfil</button>
@@ -125,8 +127,9 @@
                                     Arnold alves
                                 </td>
                                 <td>
-                                    (87)99630-5841
+                                    Heliópolis
                                 </td>
+                                
 
                                 <td>
                                     <button class="btn btn-primary">Perfil</button>
@@ -144,9 +147,9 @@
         </div>
     </div>
 
-    <script src="js/jquery.js"></script>
+    <script src="../public/js/jquery.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="js/scripts.js"></script>
+    <script src="../public/js/script.js"></script>
 </body>
 
 </html>

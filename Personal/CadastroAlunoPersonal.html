@@ -10,11 +10,11 @@
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!--CSS-->
-  <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="../public/css/css.css">
   <script src="jsv/scripts.js" defer></script>
   <!--defer faz com que o js seja executado dps q o html for executado-->
 
-  <title>Cadastro</title>
+  <title>Academias Go</title>
 </head>
 
 <body>
@@ -32,13 +32,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" href="seusAlunos.html">Seus Alunos</a>
+          <a class="nav-link active" href="ListagemAlunosPersonal.html">Seus Alunos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="exerciciosCadastrados.html">Exercícios</a>
+          <a class="nav-link" href="ListagemExerciciosPersonal.html">Exercícios</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="CardiosCadastradosPersonal.html">Cardio</a>
+          <a class="nav-link" href="ListagemCardiosersonal.html">Cardio</a>
         </li>
       </ul>
     </div>
@@ -113,7 +113,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-4">
-            <input type="text" class="form-control" id="filial" placeholder="Filial" required>
+            <input type="text" class="form-control" id="unidade" placeholder="Unidade" required>
             <div class="valid-feedback">
               Ok!
             </div>
@@ -128,7 +128,7 @@
           </div>
 
           <div class="col-md-3 mb-4">
-            <select class="form-select">
+            <select class="form-select form-control">
               <option selected>Sexo:</option>
               <option value="1">Maculino</option>
               <option value="2">Feminino</option>
@@ -151,23 +151,26 @@
            <!--INFOS ADICIONAIS-->
           <hr>
           <h5 class="g-4 mb-4" id="texto">Informações adicionais:</h5>
-          <div class="col-md-4 mb-4">
-            <input type="number" class="form-control" id="frequencia" placeholder="Frequência" min="1" max="7" required>
+          <div class="col-md-6 mb-4">
+            <select class="form-select form-control">
+              <option selected>Frequência</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
           </div>
-          <div class="col-md-4 mb-4">
-            <select class="form-select">
+          <div class="col-md-6 mb-4">
+            <select class="form-select form-control">
               <option selected>Objetivo:</option>
               <option value="1">Emagrecimento</option>
               <option value="2">Hipertrofia</option>
               <option value="3">Resistência</option>
             </select>
           </div>
-          <div class="col-md-4 mb-4">
-            <input type="number" class="form-control" id="sono" placeholder="Horas" min="0" required>
-          </div>
-
-
-
 
           <div class="col-md-12 mb-4">
             <input type="text" class="form-control" id="remedio" placeholder="Toma remédio controlado? Se sim, quais?"
@@ -190,54 +193,37 @@
               placeholder="Possui colesterol, triglicerídeo ou glicose alta?" required>
           </div>
 
-          <div class="col-md-12 mb-4">
-            <form>
-              <b>
-                <p>Possui alguma alteração cardíaca?</p>
-              </b>
-              <input type="radio" id="" name="altCardia" value="">
-              <label for="">Não Possui</label><br>
-              <input type="radio" id="" name="altCardia" value="">
-              <label for="">Sim, leve</label><br>
-              <input type="radio" id="" name="altCardia" value="">
-              <label for="">Sim, Grave</label>
-            </form>
+          <div class="col-md-6 mb-4">
+            <select class="form-select form-control">
+              <option selected>Alteração cardíaca?</option>
+              <option value="1">Não possui</option>
+              <option value="2">Sim, leve</option>
+              <option value="3">Sim, grave</option>
+            </select>
           </div>
 
-
-          <div class="col-md-8 mb-4">
-            <form>
-              <b>
-                <p>É Fumante?</p>
-              </b>
-              <input type="radio" id="" name="fumante" value="">
-              <label for="">Sim</label><br>
-              <input type="radio" id="" name="fumante" value="">
-              <label for="">Não</label><br>
-            </form>
-          </div>
-          <div class="col-md-4 mb-4">
-            <form>
-              <b>
-                <p>Possui diabetes?</p>
-              </b>
-              <input type="radio" id="" name="diabetes" value="">
-              <label for="">Sim</label><br>
-              <input type="radio" id="" name="diabetes" value="">
-              <label for="">Não</label><br>
-            </form>
+          <div class="col-md-6 mb-4">
+            <select class="form-select form-control">
+              <option selected>É fumante?</option>
+              <option value="1">Não </option>
+              <option value="2">Sim</option>   
+            </select>
           </div>
 
-          <div class="col-md-4 mb-4">
-            <form>
-              <b>
-                <p>É hipertenso?</p>
-              </b>
-              <input type="radio" id="" name="hipertenso" value="">
-              <label for="">Sim</label><br>
-              <input type="radio" id="" name="hipertenso" value="">
-              <label for="">Não</label><br>
-            </form>
+          <div class="col-md-6 mb-4">
+            <select class="form-select form-control">
+              <option selected>Possui diabetes?</option>
+              <option value="1">Não</option>
+              <option value="2">Sim</option>
+            </select>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <select class="form-select form-control">
+              <option selected>É hipertenso?</option>
+              <option value="1">Não</option>
+              <option value="2">Sim</option>
+            </select>
           </div>
 
           <div class="col-md-12 mb-4">
@@ -262,64 +248,7 @@
             </form>
           </div>
 
-          <!--MEDIDAS CORPORAIS
-                   <hr>
-                   <h5 class="g-4 mb-4" id="texto">Medidas corporais:</h5>
-                   <div class="col-md-3 mb-4">
-                    <label for="torax" class="form-label">Toráx:</label>
-                    <input type="number" class="form-control" id="torax" placeholder="" required>
-                  </div>
-                  <div class="col-md-3 mb-4">
-                    <label for="bracoD" class="form-label">Braço direito:</label>
-                    <input type="number" class="form-control" id="bracoD" placeholder="" required>
-                  </div>
-                  <div class="col-md-3 mb-4">
-                    <label for="bracoE" class="form-label">Braço esquerdo:</label>
-                    <input type="number" class="form-control" id="bracoE" placeholder="" required>
-                  </div>
-                  <div class="col-md-3 mb-4">
-                    <label for="quadril" class="form-label">Quadril:</label>
-                    <input type="number" class="form-control" id="quadril" placeholder="" required>
-                  </div>
-
-                  <div class="col-md-3 mb-4">
-                    <label for="coxaD" class="form-label">Coxa direita:</label>
-                    <input type="number" class="form-control" id="coxaD" placeholder="" required>
-                  </div>
-                  <div class="col-md-3 mb-4">
-                    <label for="coxaE" class="form-label">Coxa esquerda:</label>
-                    <input type="number" class="form-control" id="coxaE" placeholder="" required>
-                  </div>
-                  <div class="col-md-3 mb-4">
-                    <label for="abs" class="form-label">Abdomên:</label>
-                    <input type="number" class="form-control" id="abs" placeholder="" required>
-                  </div>
-                  <div class="col-md-3 mb-4">
-                    <label for="cintura" class="form-label">Cintura:</label>
-                    <input type="number" class="form-control" id="cintura" placeholder="" required>
-                  </div>
-
-                  <div class="col-md-4 mb-4">
-                    <label for="antebraçoD" class="form-label">Antebraço direito:</label>
-                    <input type="number" class="form-control" id="antebraçoD" placeholder="" required>
-                  </div>
-                  <div class="col-md-4 mb-4">
-                    <label for="antebraçoD" class="form-label">Antebraço esquerdo:</label>
-                    <input type="number" class="form-control" id="antebraçoD" placeholder="" required>
-                  </div>
-                  <div class="col-md-4 mb-4">
-                    <label for="escapular" class="form-label">Escapular:</label>
-                    <input type="number" class="form-control" id="escapular" placeholder="" required>
-                  </div>
-
-                  <div class="col-md-6 mb-4">
-                    <label for="panturrilhaD" class="form-label">Panturrilha direita:</label>
-                    <input type="number" class="form-control" id="panturrilhaD" placeholder="" required>
-                  </div>
-                  <div class="col-md-6 mb-4">
-                    <label for="panturrilhaE" class="form-label">Panturrilha esquerda:</label>
-                    <input type="number" class="form-control" id="panturrilhaE" placeholder="" required>
-                  </div> -->
+          
         </form>
 
         <!--BOTÃO DE CADASTRAR-->
@@ -332,9 +261,9 @@
     </div>
   </div>
 
-  <script src="js/jquery.js"></script>
+  <script src="../public/js/jquery.js"></script>
   <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-  <script src="js/scripts.js"></script>
+  <script src="../public/js/script.js"></script>
 </body>
 
 </html>

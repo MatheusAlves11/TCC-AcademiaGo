@@ -2,16 +2,9 @@
     margin-left: 0px;
 }
 
-/*NAVBAR */
-.navbar {
-    margin-left: -5.4%;
-    margin-right: -5.6%;
-  }
 
 body{
     background-color: lightblue;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
 .container{
@@ -52,3 +45,27 @@ a{
     border-radius: 50%; 
     border: none;
 }
+
+.filtrarMes{
+    width: fit-content;
+}
+.rolagem {
+    overflow-y: scroll;
+    max-height: 300px;
+}
+
+.table {
+    position: relative;
+}
+thead {
+    position: sticky;
+    background-color: white;
+}
+
+/* thead > tr > th {
+    position: sticky;
+    top: -1px;
+} */
+/*thead>tr{
+    position: fixed;
+}*/

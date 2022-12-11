@@ -15,7 +15,11 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!--CSS pessoal-->
+
+    <!--Icons-->    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+   
+ <!--CSS pessoal-->
     <link rel="stylesheet" href="../public/css/css.css">
 </head>
 
@@ -82,21 +86,24 @@
                 <h2 class="texto mb-4">
                     <b> Histórico de Treino</b>
                 </h2>
-                <select class="form-select" name="" id="">
-                    <option selected>Mês</option>
-                    <option value="janeiro">Janeiro</option>
-                    <option value="fevereirio">fevereirio</option>
-                    <option value="marco">março</option>
-                    <option value="abril">abril</option>
-                    <option value="maio">maio</option>
-                    <option value="junho">junho</option>
-                    <option value="julho">julho</option>
-                    <option value="agosto">agosto</option>
-                    <option value="setembro">setembro</option>
-                    <option value="outubro">outubro</option>
-                    <option value="novembro">novembro</option>
-                    <option value="dezembro">dezembro</option>
-                </select>
+                <div class="d-flex justify-content-center">
+                    <select class="form-select filtrarMes" name="" id="">
+                        <option selected>Mês</option>
+                        <option value="janeiro">Janeiro</option>
+                        <option value="fevereirio">Fevereirio</option>
+                        <option value="marco">Março</option>
+                        <option value="abril">Abril</option>
+                        <option value="maio">Maio</option>
+                        <option value="junho">Junho</option>
+                        <option value="julho">Julho</option>
+                        <option value="agosto">Agosto</option>
+                        <option value="setembro">Setembro</option>
+                        <option value="outubro">Outubro</option>
+                        <option value="novembro">Novembro</option>
+                        <option value="dezembro">Dezembro</option>
+                    </select>
+                    <button class="btn btn-outline-primary"><i class="bi bi-search"></i></button>
+                </div>
 
                 <div class="table-responsive">
                     <table class="table">
